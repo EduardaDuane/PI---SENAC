@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f9;
+    color: #111111;
+}
+
+/* container principal: menu de um lado, conteudo do outro */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu-lateral {
+    width: 200px;
+    background-color: #0a1228;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.brand span {
+    color: #ff8a00;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    background-color: #1c2a4d;
+}
+
+.configuracoes {
+    margin-top: auto;
+    color: #ff8a00;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* ===== CONTEUDO ===== */
+.conteudo {
+    flex: 1;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* ===== CARDS DE ALERTA ===== */
+.lista-alertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-alerta {
+    width: 48%;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-alerta h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-alerta p {
+    font-size: 14px;
+}
+
+
+.resumo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.card-resumo {
+    width: 31%;
+    height: 85px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.card-resumo h3 {
+    font-size: 26px;
+}
+
+.card-resumo p {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.vermelho {
+    background-color: red;
+}
